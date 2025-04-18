@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#121212</item>
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="colorAccent">#BB86FC</item>
+        <item name="android:windowBackground">#121212</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:textColorSecondary">#A0A0A0</item>
+        <item name="android:textColorHint">#A0A0A0</item>
+        <item name="android:textColorLink">#BB86FC</item>
+        <item name="android:actionBarStyle">@style/CustomActionBar</item>
+        <item name="android:buttonStyle">@style/CustomButtonStyle</item>
+    </style>
+
+    <style name="CustomActionBar" parent="@style/Widget.MaterialComponents.Toolbar.Surface">
+        <item name="android:titleTextColor">#FFFFFF</item>
+        <item name="android:subtitleTextColor">#FFFFFF</item>
+    </style>
+
+    <style name="CustomButtonStyle" parent="@style/Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+</resources>

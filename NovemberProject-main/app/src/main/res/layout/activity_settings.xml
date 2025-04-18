@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarSettings"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:title="@string/settings"
+        android:titleTextColor="@android:color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pulsating_ui"
+            android:textSize="16sp" />
+
+        <Switch
+            android:id="@+id/switchPulsating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enable_pulsating_effect"
+            android:textColor="#FFFFFF"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/posts_between_pulses"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp" />
+
+        <SeekBar
+            android:id="@+id/seekBarPulseInterval"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="20" />
+
+        <!-- The text value is only a placeholder -->
+        <TextView
+            android:id="@+id/tvPulseIntervalValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp"/>
+
+        <Button
+            android:id="@+id/btnViewTracking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/view_tracking_data"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</LinearLayout>
